@@ -8,6 +8,7 @@ public class inGuichet implements Runnable {
         this.queue = q;
     }
 
+
     // 이건 멀티쓰레드를 위한 예제이지만 나는 지금 개찰구 컨트롤을 위한 예제를 짜야한다.
     // in out 하나씩 짜본다고 가정하면,
     // run에서의 Exit 를 뱉는 쪽은 필요없고, for문에서의 사이즈는 그래프에서 받아온 값을 알고리즘에 맞게 배분후 in 과 out에 뿌려주면 될듯하다.
