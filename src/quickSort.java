@@ -1,8 +1,9 @@
 public class quickSort {
+    private static int num;
     public static void main(String[] args) {
         System.out.println("Quick Sort");
 
-        int[] A = {40, 30, 100, 60, 80, 70, 90, 10, 20, 50};
+        int[] A = {40, 30, 100, 60, 80, 70, 90, 10, 20, 50, 101, 102, 103, 105};
         int i;
 
         System.out.println("before quick");
@@ -17,6 +18,9 @@ public class quickSort {
         for (i = 0; i < A.length; i++) {
             System.out.printf("%d", A[i]);
         }
+
+        System.out.println("\n" + num);
+
     }
 
     public static void QuickSort(int[] A, int start, int end) {
@@ -43,12 +47,15 @@ public class quickSort {
                 A[i] = A[index];
                 A[index] = temp;
                 index++; // 인덱스를 통해 자리 지정
+                num++;
             }
         }
 
         temp = A[index]; // 마지막자리 swap
         A[index] = A[end];
         A[end] = temp;
+        num++;
+
         return index;
     }
 }
