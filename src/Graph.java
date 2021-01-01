@@ -1,15 +1,13 @@
-import org.knowm.xchart.*;
-import org.knowm.xchart.style.markers.SeriesMarkers;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.knowm.xchart.QuickChart;
+import org.knowm.xchart.SwingWrapper;
+import org.knowm.xchart.XYChart;
 
 public class Graph {
-    public static void main(String[] args) {
+    // 하나 고정
+    static double[] xData = new double[] {0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0};
+    static double[] yData = new double[] {1.0, 2.0, 4.0, 6.0, 9.0, 9.0, 7.0, 7.0, 5.0, 3.0, 2.0};
 
-        // 하나 고정
-        double[] xData = new double[] {0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0};
-        double[] yData = new double[] {1.0, 2.0, 4.0, 6.0, 9.0, 9.0, 7.0, 7.0, 5.0, 3.0, 2.0};
+    public static void main(String[] args) {
 
         // Create Chart
         XYChart chart = QuickChart.getChart("유동인구 그래프", "시간(5분)", "나가는 인구수", "유동인구 현황", xData, yData);
