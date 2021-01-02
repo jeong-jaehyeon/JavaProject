@@ -7,10 +7,16 @@ public class Graph {
     static double[] xData = new double[] {0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0};
     static double[] yData = new double[] {1.0, 2.0, 4.0, 6.0, 9.0, 9.0, 7.0, 7.0, 5.0, 3.0, 2.0};
 
+    static XYChart chart = QuickChart.getChart("유동인구 그래프", "시간(5분)", "나가는 인구수", "유동인구 현황", xData, yData);
+
+    public static void play() {
+        new SwingWrapper(chart).displayChart();
+    }
+
     public static void main(String[] args) {
 
         // Create Chart
-        XYChart chart = QuickChart.getChart("유동인구 그래프", "시간(5분)", "나가는 인구수", "유동인구 현황", xData, yData);
+        chart = QuickChart.getChart("유동인구 그래프", "시간(5분)", "나가는 인구수", "유동인구 현황", xData, yData);
 //        chart.getStyler().setYAxisMin(-10.0);
 //        chart.getStyler().setYAxisMax(10.0);
 
