@@ -6,7 +6,7 @@ class Cake2 {
     }
 
     public void showCakeSize() {
-        System.out.println("케잌의 크기는? :" + size);
+        System.out.println("케잌의 크기는?  (cake2):" + size);
     }
 }
 
@@ -31,10 +31,10 @@ public class YummyCakeSize {
         CheeseCake2 cheeseCake = new CheeseCake2(5, 7);
         Cake2 cake2 = cheeseCake; // 치즈케이크가 참조하는 것을 cake2도 참조함.
 
-        System.out.println("케잌의 사이즈는? :" + cake2.size);
-        System.out.println();
-        System.out.println("치즈 케잌의 사이즈는? :" + cheeseCake.size);
-        System.out.println();
+//        System.out.println("케잌의 사이즈는? :" + cake2.size);
+//        System.out.println();
+//        System.out.println("치즈 케잌의 사이즈는? :" + cheeseCake.size);
+//        System.out.println();
 
         System.out.println("치즈 케이크 쇼케이크");
         cheeseCake.showCakeSize();
